@@ -4,7 +4,7 @@
 //
 
 export const steps = (number, step = 0) => {
-  if (greaterThanZero(number)) {
+  if (number > 0) {
     if (number === 1) {
       return step;
     }
@@ -13,7 +13,5 @@ export const steps = (number, step = 0) => {
     throw new Error('Only positive numbers are allowed');
   }
 };
-
-const greaterThanZero = (number) => number > 0;
 
 const conjecture = (number) => number % 2 === 0 ? number / 2 : number * 3 + 1;
