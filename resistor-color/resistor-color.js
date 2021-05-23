@@ -3,7 +3,7 @@
 // convenience to get you started writing code faster.
 //
 
-export const colorCode = (colorName) => COLORS.indexOf(colorName);
+export const colorCode = (colorName) => COLORS.indexOf(colorName.toLowerCase());
 
 export const COLORS = [
   'black',

@@ -5,4 +5,7 @@
 
 const divisible = (number, divisor) => !(number % divisor);
 
-export const isLeap = (year) => divisible(year, 100) ? divisible(year, 4) && divisible(year, 400) : divisible(year, 4);
+export const isLeap = (year) => {
+  const divisibleByFour = divisible(year, 4);
+  return divisible(year, 100) ? divisibleByFour && divisible(year, 400) : divisibleByFour;
+};

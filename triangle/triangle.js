@@ -39,8 +39,8 @@ export class Triangle {
   }
 
   verifyQuality() {
-    const orderedSides = this.sides.sort();
-    return orderedSides[0] + orderedSides[1] >= orderedSides[2];
+    const [firstSide, secondSide, ThirdSide] = this.sides.sort();
+    return firstSide + secondSide >= ThirdSide;
   }
 
   notZeros() {

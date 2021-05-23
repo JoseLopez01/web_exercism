@@ -3,7 +3,7 @@
 // convenience to get you started writing code faster.
 //
 
-export const decodedValue = (colors) => (COLORS.indexOf(colors[0].toLowerCase()) * 10) + COLORS.indexOf(colors[1].toLowerCase());
+export const decodedValue = ([firstColor, secondColor]) => (COLORS.indexOf(firstColor.toLowerCase()) * 10) + COLORS.indexOf(secondColor.toLowerCase());
 
 export const COLORS = [
   'black',
