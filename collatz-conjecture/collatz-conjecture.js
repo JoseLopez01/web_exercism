@@ -14,8 +14,6 @@ export const steps = (number, step = 0) => {
   }
 };
 
-const greaterThanZero = (number) => {
-  return number > 0;
-}
+const greaterThanZero = (number) => number > 0;
 
 const conjecture = (number) => number % 2 === 0 ? number / 2 : number * 3 + 1;
