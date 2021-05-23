@@ -3,7 +3,4 @@
 // convenience to get you started writing code faster.
 //
 
-export const gigasecond = (date) => {
-  const milliseconds = date.getTime() + 10e11;
-  return new Date(milliseconds);
-};
+export const gigasecond = (date) => new Date(date.getTime() + 10e11);
